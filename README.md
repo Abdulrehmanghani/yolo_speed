@@ -29,7 +29,8 @@ Appealmate-AI is a Flask-based application designed to process various tasks usi
 ### Running in Development Mode
 Start the Flask application with:
 ```sh
-python run.py```
+python run.py
+```
 This runs the server on port 8000 with debugging enabled.
 
 ### Running in Production Mode
@@ -37,14 +38,17 @@ This runs the server on port 8000 with debugging enabled.
 Use Gunicorn to serve the application:
 
 ```
-gunicorn -c gunicorn.conf.py prod_run:app```
+gunicorn -c gunicorn.conf.py prod_run:app
+```
 
 ### Running Workers
 
 Start the user worker:
 ```
-python run_worker.py ```
+python run_worker.py
+```
 
 Start the admin worker:
 ``` 
-python run_admin_worker.py ```
+python run_admin_worker.py 
+```
